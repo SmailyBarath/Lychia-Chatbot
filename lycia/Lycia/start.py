@@ -7,7 +7,7 @@ Hello, I am Lycia [リュキア], An Intelligent ChatBot. If You Are Feeling Lon
 """
 
 
-@LYCIA.on_message(filters.command(["start"], prefixes = "/") & ~filters.edited)
+@LYCIA.on_message(filters.command("start"))
 async def info(client, message):
     buttons = [
                 [InlineKeyboardButton("Lycia", switch_inline_query_current_chat="lycia "), InlineKeyboardButton("Github", url = "https://github.com/Red-Aura/Lyciachatbot")]
